@@ -1,0 +1,36 @@
+body {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.shiba {
+  display: flex;
+  justify-content: center;
+}
+.shiba .imgs {
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 600px) {
+  .shiba .imgs {
+    width: 94%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin: 20px auto;
+  }
+}
+
+.renew {
+  display: flex;
+  flex-direction: row;
+  border: 2px double black;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 40px 100px;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(255, 241, 201);
+}/*# sourceMappingURL=styles.css.map */
