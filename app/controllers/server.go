@@ -25,6 +25,7 @@ func StartMainServer() error {
 	http.HandleFunc("/top", top)
 
 	fmt.Println("Stated Server")
+	
 	port := os.Getenv("PORT")
 	return http.ListenAndServe(":"+port, nil)
 }
