@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
+	"os"
 	"shiba/config"
 )
 
@@ -24,6 +25,6 @@ func StartMainServer() error {
 	http.HandleFunc("/top", top)
 
 	fmt.Println("Stated Server")
-
-	return http.ListenAndServe(":"+config.Config.Port, nil)
+	port := os.Getenv("PORT")
+	return http.ListenAndServe(":"+port, nil)
 }
